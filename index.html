@@ -22,6 +22,10 @@
   .row a { color: #1d222b; font-weight: 600; text-decoration: none; border-bottom: 2px solid #ffd94d; padding-bottom: 1px; }
   .row a:hover { border-color: #1d222b; }
   .row .soon { color: #a29a8a; font-size: 0.9rem; }
+  .note-anchor { position: relative; display: inline-block; }
+  .hand-anno { position: absolute; left: 0.05rem; top: calc(100% + 0.55rem); white-space: nowrap; font-family: "Bradley Hand", "Chalkboard SE", "Comic Sans MS", cursive; color: #c2410c; font-size: 0.92rem; transform: rotate(-2deg); }
+  .hand-anno::first-letter { font-size: 1.15em; }
+  .row { row-gap: 2.4rem; }
   .upcoming { padding: 0 0 3rem; }
   .upcoming .slot { display: flex; justify-content: space-between; gap: 1rem; padding: 1.05rem 0; border-top: 1px solid #ddd6c8; color: #a29a8a; font-size: 0.98rem; }
   .upcoming .slot i { font-style: normal; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; }
@@ -42,8 +46,8 @@
     <div class="row sans">
       <a href="#amazon">Buy the paperback</a>
       <a href="https://react.makeitstickpress.com">Try the examples free</a>
-      <a href="https://stackblitz.com/github/makeitstickpress/forecast">See the finished app</a>
-      <span class="soon">On Amazon soon · PDF edition included free with the paperback · the finished-app link needs your ad blocker off for stackblitz.com</span>
+      <span class="note-anchor"><a href="https://stackblitz.com/github/makeitstickpress/forecast">See the finished app</a><span class="hand-anno">⤴ turn your ad blocker off for this one!</span></span>
+      <span class="soon">On Amazon soon · PDF edition included free with the paperback</span>
     </div>
   </div>
 </section>
